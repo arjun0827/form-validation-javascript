@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="outer-div">
+        <form>
+            <h1>Welcome on page</h1>
+            <p class="sub-title">Please enter your details</p>
+            <div class="form-div">
+                <div class="inputs">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <p class="para" id="error1">Please enter your name</p>
+            </div>
+
+            <div class="form-div">
+                <div class="inputs">
+                    <label for="age">Age</label>
+                    <input type="text" name="age" id="age" placeholder="Enter your age">
+                </div>
+                <p class="para" id="error2">Please enter your age</p>
+            </div>
+
+            <div class="form-div">
+                <div class="inputs">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                </div>
+                <p class="para" id="error3">Enter password that has 8 letters and conatains atleast 1 uppercase, 1
+                    lowercase, 1 number and 1 special symbol..</p>
+            </div>
+
+            <div class="form-div">
+                <div class="inputs">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="mail" placeholder="Enter your email">
+                </div>
+                <p class="para" id="error4">Enter valid mail which contains @ in it</p>
+            </div>
+
+            <div>
+                <input type="checkbox" name="check" id="checkbox">
+                <label for="check" class="remember">Remember for 30 days</label>
+                <p class="para" id="error5">First check the value</p>
+               </div>
+
+            <div class="btn-section">
+                <button type="submit" class="submit">Submit</button>
+                <button type="reset" class="reset">Reset</button>
+            </div>
+        
+        </form>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
